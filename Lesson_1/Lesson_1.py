@@ -19,7 +19,7 @@ def lesson1():
 
 def lesson2():
     select = input("add quarter number: ")
-    #input(u''.join("âöâöâ"))
+    #input(u''.join("ï¿½ï¿½ï¿½ï¿½ï¿½"))
         
     if select == "1":
         print("x min = -1, x max = -20", "y min = 1, max = 20")
@@ -47,6 +47,6 @@ def lesson3():
     print(result)
 
 print('start')
-#lesson1()
-#lesson2()
-#lesson3()
+lesson1()
+lesson2()
+lesson3()
