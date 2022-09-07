@@ -47,9 +47,9 @@ def Main3():
     Print(number)
 
 #Lesson1()
-#Main()
+Main()
 #Main2()
-Main3()
+#Main3()
 
 
 
