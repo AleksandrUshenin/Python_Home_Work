@@ -1,7 +1,4 @@
 
-from ast import Lambda
-
-
 def f(res):
     ind, x = res 
     if ind % 2 == 0:
