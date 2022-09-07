@@ -44,7 +44,29 @@ def exercise12(number):
         result[i] = x + 1, y
     return result 
 
-print(exercise12(6))
+def ex15_3(num):
+    res = 1
+    while num > 1:
+        print('ind', num)
+        num -= 1
+        res *= num
+    return res
+
+def ex15_2(num, ind):
+    if ind > 2:
+        res1 = ind
+        res2 = ex15_3(ind)
+        return res1 * res2
+        
+    return ind
+
+def exercise15(number):
+    mylist = [ex15_2(number, i) for i in range(1, number + 1) ]
+    return mylist
+
+print(exercise15(7))
+
+#print(exercise12(6))
 
 #print(exercise1(10))
 
