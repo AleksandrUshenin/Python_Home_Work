@@ -25,7 +25,7 @@ def exercise2(list_number):
                 break
     return  result
 
-# сщхранение для задания 3
+# сoхранение для задания 3
 def saveData(polynomial):
     with open('file.txt', 'w') as data:
         data.write(polynomial)
