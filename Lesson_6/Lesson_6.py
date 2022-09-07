@@ -33,6 +33,19 @@ def exercise1(num):
             e = e + 1
     return result
 
+def exercise12(number):
+    result = []
+    for i in range(1, number + 1):
+        result.append(3 * i + 1)
+    result = list(enumerate(result))  
+
+    for i in range(len(result)):
+        x, y = result[i]
+        result[i] = x + 1, y
+    return result 
+
+print(exercise12(6))
+
 #print(exercise1(10))
 
 #print(ex1([2, 3, 5, 9, 3]))
