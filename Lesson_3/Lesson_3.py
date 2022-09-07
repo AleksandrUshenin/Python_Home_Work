@@ -1,22 +1,31 @@
 
-# задание 1
-#суммa элементов списка стоящих на нечётной позиции
+def f(res):
+    ind, x = res 
+    if ind % 2 == 0:
+        return False
+    return True
+
+# ex 1 
 def ex1(numbers):
     result = 0
-    for i in range(-1, len(numbers), 2):
-        if i != -1:
-            result += numbers[i]
+    result_numbers = list(enumerate(numbers))
+
+    result_numbers = list(filter(f, result_numbers))
+
+    for i in result_numbers:
+        ind, num = i
+        result += num
+            
     return result
 
-# метод к заданию 2
+# ex 2
 def carrent_number(number):
     res = number / 2
     if res % 1 != 0:
         return int(res) + 1
     return int(res)
 
-# задание 2
-#найти произведение пар чисел списка. Парой считаем первый и последний элемент, второй и предпоследний и т.д.
+# ex 2
 def ex2(list_number):
     result = []
     len_list = carrent_number(len(list_number))
@@ -24,8 +33,7 @@ def ex2(list_number):
         result.append(list_number[i] * list_number[len(list_number) - i - 1])
     return  result
 
-# задание 3
-#найти разницу между максимальным и минимальным значением дробной части элементов
+# ex 3
 def ex3(list_numbers):
     min_num = list_numbers[0]
     max_num = 0
@@ -41,8 +49,7 @@ def ex3(list_numbers):
             max_num = i
     return max_num - min_num
 
-# задание 4
-#преобразовыввает десятичное число в двоичное
+# ex 4
 def ex4(number):
     result = []
     while number > 0:

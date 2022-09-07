@@ -1,7 +1,5 @@
-#from ctypes import pointer
+
 import math
-#from unittest import case
-#from nis import match
 
 
 def lesson1():
